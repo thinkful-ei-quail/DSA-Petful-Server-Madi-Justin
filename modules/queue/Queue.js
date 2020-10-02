@@ -41,11 +41,23 @@ class Queue {
     return node.value;
   }
   show() {
-    // Return the next item in the queue.
+    if(this.first === null) {
+      return 
+    }
+
+    return this.first.value
   }
 
   all() {
-    // Return all items in the queue.
+    const allPets = []
+    let node = this.first
+    while(node) {
+      allPets.push(node.value)
+      node = node.next
+    }
+
+    return allPets
+  
   }
 }
 
