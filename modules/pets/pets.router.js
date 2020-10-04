@@ -18,13 +18,4 @@ router.delete('/', json, (req, res) => {
   Pets.dequeue(pet)
   res.status(204)
 })
-
-router.get('/dog', (req, res) => {
-  res.status(200).json();
-})
-
-
-router.get('/cat', (req, res) => {
-  res.status(200).json();
-})
 module.exports = router

@@ -2,9 +2,9 @@ const express = require('express')
 const cors = require('cors')
 const helmet = require('helmet')
 const morgan = require('morgan')
-const { NODE_ENV } = require('./config')
+const { NODE_ENV } = require('../config')
 const peopleRouter = require('../people/people.router')
-const petseRouter = require('../pets/pets.router')
+const petsRouter = require('../pets/pets.router')
 
 const app = express()
 
@@ -14,8 +14,8 @@ app.use(morgan(morganSetting))
 app.use(helmet())
 app.use(cors())
 
-app.use('/people', require('../people/people.router'))
-app.use('/pets', require('../pets/pets.router'))
+app.use('/people', peopleRouter)
+app.use('/pets', petsRouter)
 
 app.use(function errorHandler(error, req, res, next) {
   let response;
