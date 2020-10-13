@@ -3,11 +3,16 @@
 ## Team
 
 Justin Foster (github: justin-foster-91)
+
 Madison Brown (github: mbcodes29)
 
-### Live Page
+### Resources
 
-https://dsa-petful-client-madi-justin.vercel.app/
+Live Page: https://dsa-petful-client-madi-justin.vercel.app/
+
+Client Repo: https://github.com/thinkful-ei-quail/DSA-Petful-Client-Madi-Justin
+
+Server Repo: https://github.com/thinkful-ei-quail/DSA-Petful-Server-Madi-Justin
 
 ### Statement
 
@@ -40,4 +45,5 @@ When a new adopter enters their name on the adoption page, it shows up in the qu
 ## Technology Used:
 
 Front End: JavaScript, React, HTML5, CSS3
+
 Back End: Node.js, Express, Mocha & Chai, REST APIs 3
